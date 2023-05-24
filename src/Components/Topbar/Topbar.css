@@ -1,0 +1,121 @@
+.topbar{
+    width: 80vw;
+    height: 20vh;
+    overflow: hidden;
+    background: #0D0F10;
+    border-radius: 20px;
+}
+.topbar__inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 78px;
+    padding-top: 24px;
+    border-bottom: 1px solid #131619;
+    align-items: center;
+}
+
+.topbar__content {
+    display: inline-block;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.topbar__title {
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 4px;
+}
+
+.topbar__text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+
+    /* Noble Black/300 */
+
+    color: #9B9C9E;
+}
+.topbar__user{
+    display: flex;
+    justify-content: flex-end;
+}
+.topbar__user__inner{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+.topbar__share__inner{
+    display: flex;
+    justify-content: center;
+}
+.topbar__share__items{
+   display: flex;
+    gap: 14px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #686B6E;
+    cursor: pointer;
+}
+.topbar__user__icon:hover{
+}
+
+.topbar__share {
+}
+
+.topbar__share__inner {
+}
+.topbar__btn {
+    display: inline-block;
+    max-height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topbar__btn__inner {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: 24px;
+}
+
+.topbar__btn__items {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    height: 100%;
+
+    /* Noble Black/300 */
+
+    color: #9B9C9E;
+}
+.topbar__btn__items.active{
+    border-bottom:1px solid #B6F09C;
+    color: #CDCECF;
+}
+.topbar__btn__items.active svg{
+    box-shadow: 0px 1px 0px -3px rgba(182, 240, 156, 0.16), 0px 4px 6px -4px rgba(182, 240, 156, 0.16);
+    background: #0D0F10;
+    fill: #B6F09C;
+}

@@ -1,0 +1,115 @@
+.chatlayout {
+    height: 79vh;
+    background: #0D0F10;
+    position: relative;
+    display: flex;
+    width: 55vw;
+    border-radius: 16px;
+}
+.chatlayout__items:first-child{
+    margin-top: 15vh;
+}
+
+.chatlayout__box {
+    border-radius: 16px;
+    background: inherit;
+    height: 64px;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.chatbox__shadow{
+    position: absolute;
+    background: linear-gradient(180deg, rgba(19, 22, 25, 0) 0%, #131619 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    height: 112px;
+    z-index: 9999;
+    width: 100%;
+    top: 64px;
+
+
+
+}
+.chatlayout__inner{
+    border-radius: 16px;
+    height: 80vh;
+    overflow: scroll;
+}
+.chatlayout__inner::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.chatlayout__inner { -ms-overflow-style: none; }
+
+.chatlayout__box__inner {
+    display: grid;
+    grid-template-columns: 88% 12%;
+    height: 100%;
+    justify-items: start;
+    padding-left: 24px;
+}
+
+.chatlayout__box__items {
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.chatlayout__box__text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Noble Black/0 */
+
+    color: #FFFFFF;
+}
+
+.chatlayout__box__count {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(117.58deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0) 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+
+    /* Stem Green/500 */
+
+    color: #B6F09C;
+}
+
+.chatlayout__box__btn {
+    background: inherit;
+}
+
+.chatlayout__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow: scroll;
+}
+.chatlayout__input{
+    position: absolute;
+    bottom: 10px;
+}
+.chatlayout__items__end{
+    padding-bottom: 150px;
+}

@@ -1,0 +1,27 @@
+.general {
+}
+.general__inner {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    grid-template-rows: 20% 80%;
+    gap: 12px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.general__items__sidebar {
+}
+
+.general__items__topbar {
+    grid-column-start: 2;
+}
+
+.general__items__chatlayout {
+    grid-column-start: 2;
+}
+
+.general__items__members {
+}
+
+

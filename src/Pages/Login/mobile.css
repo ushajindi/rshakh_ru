@@ -1,0 +1,167 @@
+@media (max-width: 940px){
+    .login__inner {
+
+    }
+
+    .login__items {
+    }
+
+    .logo {
+    }
+
+    .logo__text {
+
+    }
+
+    .login__area {
+    }
+
+    .login__title {
+    }
+
+    .login__title__bold {
+    }
+
+    .login__text {
+    }
+
+    .login__data {
+        grid-template-columns: 85%;
+    }
+
+    .login__input {
+    }
+
+    .login__forgot {
+    }
+
+    .remember {
+    }
+
+    .login__btn {
+    }
+
+    .img__logo {
+    }
+    .login__auth__btn__item button{
+        font-size: 14px;
+    }
+}
+@media (max-width: 848px) {
+    .login__auth__btn__item button{
+        padding: 10px;
+    }
+    .login__footer__text {
+        color: #CDCECF;
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+    .login__footer__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #CDCECF;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login__auth__btn__item button{
+        font-size: 12px;
+    }
+    .login__data {
+        grid-template-columns: 85%;
+        gap: 24px;
+    }
+    .login__area {
+    }
+    .login__title {
+        font-size: 36px;
+    }
+    .remember {
+        font-size: 12px;
+    }
+    .login__forgot__btn {
+        font-size: 12px;
+    }
+    .login__title__bold{
+        font-size: 32px;
+    }
+    .login__data{
+    }
+    .login__auth__btn{
+        flex-direction: column;
+    }
+    .login__auth__btn__item{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .login__auth__btn__item button{
+        margin-bottom: 24px;
+    }
+@media(max-width: 633px){
+    .login__data{
+        margin-bottom: 70px;
+    }
+
+}
+
+}
+@media (max-width: 531px) {
+    .login {
+        height: 100vh;
+    }
+
+
+    .login__items {
+        width: 100vw;
+        display: block;
+        text-align: center;
+
+    }
+
+    .login__inner {
+    }
+
+    .login__items {
+    }
+
+    .logo {
+    }
+
+    .logo__text {
+    }
+
+    .login__area {
+    }
+
+    .login__title {
+    }
+
+    .login__title__bold {
+    }
+
+    .login__text {
+    }
+
+    .login__data {
+    }
+
+    .login__input {
+    }
+
+    .login__forgot {
+    }
+
+    .remember {
+    }
+
+    .login__forgot__btn {
+    }
+
+    .login__btn {
+    }
+
+    .img__logo {
+        display: none;
+    }
+}

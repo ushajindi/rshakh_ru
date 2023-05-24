@@ -1,0 +1,133 @@
+.message {
+    width: 55vw;
+    background: #0D0F10;
+}
+.message.me{
+    background: rgba(83, 245, 13, 0.11);
+}
+
+.message__inner {
+
+}
+
+.message__items {
+}
+
+.message__items__user {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-items: start;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.message__items__user__items{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.message__items__username{
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+}
+
+.message__items__mtime {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15px;
+
+    /* Noble Black/400 */
+
+    color: #686B6E;
+}
+
+.message__inner {
+}
+
+.message__items {
+}
+
+.message__items__user {
+    margin-bottom: 12px;
+}
+
+.message__item__text {
+    margin-bottom: 12px;
+    padding-left: 88px;
+    padding-right: 12px;
+}
+
+.message__text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+
+    /* Noble Black/300 */
+
+    color: #9B9C9E;
+    text-align: left;
+
+}
+
+.message__item__media {
+    padding-left: 88px;
+    padding-right: 12px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.message__item__media__items {
+    display: flex;
+    background: inherit;
+    position: relative;
+    margin-bottom: 24px;
+}
+.message__item__media__items img{
+    border-radius: 17px;
+}
+
+.message__item__media__items__btn {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 12.33px;
+    top: 12px;
+}
+
+.message__img__btn {
+
+    background: rgba(26, 29, 33, 0.96);
+    border-top: 1px solid rgba(26, 29, 33, 0.96);
+    /* Glass/Modal */
+
+    box-shadow: 0px 24px 64px -16px rgba(0, 0, 0, 0.24), inset 16px 24px 64px -24px rgba(255, 255, 255, 0.04), inset 0px 8px 12px rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+}

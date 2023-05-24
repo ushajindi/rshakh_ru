@@ -1,0 +1,88 @@
+@media(max-width: 997px){
+    .window {
+    }
+    .register__inner {
+
+    }
+
+    .register__item {
+    }
+
+    .head__item {
+    }
+
+    .logo {
+    }
+
+    .logo__text {
+    }
+
+    .login__link {
+    }
+
+    .register__data {
+    }
+
+    .register__data__title {
+        font-size: 20px;
+    }
+
+    .register__data__item {
+        display: block;
+        max-width: 80%;
+    }
+
+    .register__data__items {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .input__text {
+    }
+
+    .register__data__input {
+    }
+
+    .register__data__items__link {
+        margin-top: 24px;
+        margin-bottom: 50px;
+    }
+
+    .register__data__items__link__input {
+    }
+
+    .register__terms {
+
+    }
+
+    .register__terms__link {
+    }
+
+    .register__data__items__btn {
+    }
+
+    .copyright {
+    }
+
+    .copyright__items {
+
+    }
+
+
+}
+
+@media (max-width: 620px) {
+
+    .register__inner {
+        position: relative;
+    }
+
+    .img__logo {
+        display: none;
+    }
+    .register__item {
+        max-width: 100vw;
+        min-height: 100vh;
+
+    }
+}
