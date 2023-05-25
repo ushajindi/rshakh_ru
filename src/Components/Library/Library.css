@@ -1,0 +1,47 @@
+.library {
+    background:#131619;
+    width: 20vw;
+    height: 80vh;
+    overflow: scroll;
+    padding: 8px 16px;
+}
+.library::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.library { -ms-overflow-style: none; }
+
+.library__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.library__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.library__name {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Noble Black/0 */
+
+    color: #FFFFFF;
+}
+
+.library__btn {
+    background: inherit;
+}
+
+.library__items {
+}

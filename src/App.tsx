@@ -10,11 +10,13 @@ import Membersbox from "./Components/Membersbox/Membersbox";
 import ChatInput from "./Components/ChatInput/ChatInput";
 import ChatLayout from "./Components/ChatLayout/ChatLayout";
 import General from "./Pages/General/General";
+import Post from "./Components/Post/Post";
+import LibraryLayout from "./Components/LibraryLayout/LibraryLayout";
 
 function App() {
   return (
     <div className="App">
-       <General/>
+        <General/>
     </div>
   );
 }

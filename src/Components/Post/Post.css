@@ -1,0 +1,125 @@
+.post {
+    max-width: 310px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: black;;
+    padding: 24px;
+}
+
+.post__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post__items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.post__title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+}
+
+.post__text {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    text-align: left;
+    letter-spacing: 0.15px;
+
+    /* Noble Black/300 */
+
+    color: #9B9C9E;
+}
+
+.border {
+    border-bottom: 1px solid #1A1D21;
+    padding-bottom: 12px;
+}
+
+.post__items__media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.post__items__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.post__items__members {
+    width: 287px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 12px;
+}
+
+.post__items__members__count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.post__items__members__count__items {
+    border-right:1px solid #1A1D21;
+    border-radius: 12px;
+}
+
+.post__items__members__count__items__count {
+    width: 32px;
+    height: 32px;
+    background: rgba(13, 15, 16, 1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+
+    /* Noble Black/400 */
+
+    color: #686B6E;
+}
+
+.post__items__members__comment {
+    color: #E8E9E9;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.post__items__members__comment__icon path{
+    stroke:#B6F09C;
+}
