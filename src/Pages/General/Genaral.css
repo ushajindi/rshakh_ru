@@ -1,4 +1,18 @@
 .general {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.post__layout__modal.on{
+    position: absolute;
+    right: 0;
+    z-index: 999999999;
+    transition: right ease-out 0.5s;
+}
+.post__layout__modal{
+    right: -100%;
+    transition: right ease-in-out 0.5s;
 }
 .general__inner {
     display: grid;

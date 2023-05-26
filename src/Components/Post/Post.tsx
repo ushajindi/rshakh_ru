@@ -4,22 +4,24 @@ import img1 from "../../images/Image.jpg"
 import img2 from "../../images/Image-1.jpg"
 import img3 from "../../images/Image-2.jpg"
 import UserIcon from "../User/UserIcon";
+import PostLayout from "../PostLayout/PostLayout";
+import ImageBox from "../ImageBox/ImageBox";
 
-const Post = () => {
+const Post = (props:any) => {
     return (
         <div className='post'>
             <div className="post__inner">
                 <div className="post__items">
-                    <p className="post__title">Post Title</p>
+                    <p onClick={()=>props.view()} className="post__title">Post Title</p>
                 </div>
                 <div className="post__items">
                     <p className="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <div className="post__items border">
                     <div className="post__items__media">
-                        <img src={img1} alt="" className="post__items__img"/>
-                        <img src={img2} alt="" className="post__items__img"/>
-                        <img src={img3} alt="" className="post__items__img"/>
+                        <ImageBox width={"80px"} src={img1}/>
+                        <ImageBox width={"80px"} src={img2}/>
+                        <ImageBox width={"80px"} src={img3}/>
                     </div>
                 </div>
                 <div className="post__items">

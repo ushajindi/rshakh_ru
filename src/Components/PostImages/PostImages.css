@@ -1,0 +1,55 @@
+.postimage {
+    width: 50vw;
+    height: 100vh;
+    overflow: scroll;
+}
+.postimage::-webkit-scrollbar{
+    display: none;
+}
+
+.postimage__inner {
+}
+
+.postimage__items {
+}
+
+.postimage__data {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #9B9C9E;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+
+}
+.postimage__inner__img__items{
+    display: flex;
+    gap: 12px;
+    overflow: scroll;
+}
+.postimage__inner__img__items::-webkit-scrollbar{
+    display: none;
+}
+.postimage__inner__img__items.end{
+    margin-bottom: 30vh;
+}
+
+.postimage__inner__img {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.postimage__img {
+    max-width: 197px;
+    max-height: 185px;
+    border-radius: 16px;
+}

@@ -2,19 +2,19 @@ import React from "react";
 import "./LibraryLayout.css"
 import Library from "../Library/Library";
 
-const LibraryLayout=()=>{
+const LibraryLayout=(props:any)=>{
 
     return(
         <div className='librarylayout'>
             <div className="librarylayout__inner">
                 <div className="librarylayout__items">
-                    <Library/>
+                    <Library view={props.view}/>
                 </div><div className="librarylayout__items">
-                    <Library/>
+                    <Library view={props.view}/>
                 </div><div className="librarylayout__items">
-                    <Library/>
+                    <Library view={props.view}/>
                 </div><div className="librarylayout__items librarylayout__items__end ">
-                    <Library/>
+                    <Library view={props.view}/>
                 </div>
             </div>
             <div className="librarylayout__btn">

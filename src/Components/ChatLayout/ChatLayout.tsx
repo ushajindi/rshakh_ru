@@ -4,13 +4,13 @@ import Message from "../Message/Message";
 import ChatInput from "../ChatInput/ChatInput";
 
 
-const ChatLayout=()=>{
+const ChatLayout=(props:any)=>{
     return(
-        <div className='chatlayout'>
-            <div className="chatbox__shadow"></div>
-            <div className="chatlayout__box">
+        <div style={{width:props.width}} className='chatlayout'>
+            <div style={props.chatname&& {top:"0"}} className="chatbox__shadow"></div>
+            <div style={{display:props.chatname}} className="chatlayout__box">
                 <div className="chatlayout__box__inner">
-                    <div className="chatlayout__box__items">
+                    <div  className="chatlayout__box__items">
                         <h2 className="chatlayout__box__text">Chat Name</h2>
                         <span className="chatlayout__box__count">4</span>
                     </div>
@@ -29,16 +29,16 @@ const ChatLayout=()=>{
             </div>
             <div className="chatlayout__inner">
                 <div className="chatlayout__items">
-                    <Message me='me'/>
+                    <Message width={props.width} me='me'/>
                 </div><div className="chatlayout__items">
-                    <Message/>
+                    <Message width={props.width}/>
                 </div><div className="chatlayout__items">
-                    <Message/>
+                    <Message width={props.width}/>
                 </div><div className="chatlayout__items chatlayout__items__end">
-                    <Message/>
+                    <Message width={props.width}/>
                 </div>
                 <div className='chatlayout__input'>
-                    <ChatInput/>
+                    <ChatInput width={props.width}/>
                 </div>
 
             </div>

@@ -91,6 +91,7 @@
     height: 100%;
     align-items: center;
     gap: 24px;
+    cursor: pointer;
 }
 
 .topbar__btn__items {

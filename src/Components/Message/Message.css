@@ -1,6 +1,7 @@
 .message {
     width: 55vw;
-    background: #0D0F10;
+    background: inherit;
+    padding-top: 14px;
 }
 .message.me{
     background: rgba(83, 245, 13, 0.11);

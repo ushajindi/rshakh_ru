@@ -1,10 +1,9 @@
 .chatlayout {
     height: 79vh;
-    background: #0D0F10;
+    background: inherit;
     position: relative;
     display: flex;
     width: 55vw;
-    border-radius: 16px;
 }
 .chatlayout__items:first-child{
     margin-top: 15vh;
@@ -28,13 +27,12 @@
     height: 112px;
     z-index: 9999;
     width: 100%;
-    top: 64px;
+    top: 55px;
 
 
 
 }
 .chatlayout__inner{
-    border-radius: 16px;
     height: 80vh;
     overflow: scroll;
 }
@@ -49,6 +47,7 @@
     height: 100%;
     justify-items: start;
     padding-left: 24px;
+    background: #0D0F10;
 }
 
 .chatlayout__box__items {

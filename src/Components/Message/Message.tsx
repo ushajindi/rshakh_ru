@@ -7,7 +7,7 @@ import img3 from "../../images/Image-2.jpg"
 
 const Message = (props:any) => {
     return (
-        <div className={`message ${props.me}`}>
+        <div style={{width:props.width}} className={`message ${props.me}`}>
             <div className="message__inner">
                 <div className="message__items">
                     <div className="message__items__user">

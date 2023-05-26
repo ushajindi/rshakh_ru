@@ -1,0 +1,25 @@
+.imagebox {
+    position: relative;
+}
+
+.imagebox__img {
+    border-radius: 12px;
+}
+
+.imagebox__btn__inner {
+
+}
+
+.imagebox__btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: rgba(26, 29, 33, 0.96);
+    border-top: 1px solid rgba(26, 29, 33, 0.96);
+    /* Glass/Modal */
+
+    box-shadow: 0px 24px 64px -16px rgba(0, 0, 0, 0.24), inset 16px 24px 64px -24px rgba(255, 255, 255, 0.04), inset 0px 8px 12px rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 5px;
+
+}

@@ -14,6 +14,7 @@
 .librarylayout__items {
     border-right: 1px solid #313941;
     border-left: 1px solid #313941;
+    border-radius: 16px;
 }
 
 .librarylayout__btn {

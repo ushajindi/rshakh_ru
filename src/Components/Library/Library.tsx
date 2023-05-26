@@ -1,8 +1,9 @@
 import React from "react";
 import "./Library.css"
 import Post from "../Post/Post";
+import PostLayout from "../PostLayout/PostLayout";
 
-const Library=()=>{
+const Library=(props:any)=>{
     return(
         <div className='library'>
             <div className="library__inner">
@@ -15,20 +16,21 @@ const Library=()=>{
                         </svg>
                     </button>
                 </div>
-                <div className="library__items">
-                    <Post/>
+                <div  className="library__items">
+                    <Post view={props.view}/>
                 </div><div className="library__items">
-                    <Post/>
+                    <Post view={props.view}/>
                 </div><div className="library__items">
-                    <Post/>
+                    <Post view={props.view}/>
                 </div><div className="library__items">
-                    <Post/>
+                    <Post view={props.view}/>
                 </div><div className="library__items">
-                    <Post/>
+                    <Post view={props.view}/>
                 </div><div className="library__items">
-                    <Post/>
+                    <Post view={props.view}/>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -12,6 +12,8 @@ import ChatLayout from "./Components/ChatLayout/ChatLayout";
 import General from "./Pages/General/General";
 import Post from "./Components/Post/Post";
 import LibraryLayout from "./Components/LibraryLayout/LibraryLayout";
+import PostLayout from "./Components/PostLayout/PostLayout";
+import PostImages from "./Components/PostImages/PostImages";
 
 function App() {
   return (

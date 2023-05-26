@@ -1,9 +1,9 @@
 import React from "react";
 import "./ChatInput.css"
 
-const ChatInput=()=>{
+const ChatInput=(props:any)=>{
     return(
-        <div className='chatinput'>
+        <div style={{width:props.width}} className='chatinput'>
             <div className="chatinput__inner">
                 <div className="chatinput__items">
                     <button className="chatinput__items__btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
