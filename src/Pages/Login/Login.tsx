@@ -7,6 +7,7 @@ import google from "../../images/google.svg"
 import apple from "../../images/apple.svg"
 import "../../loyaut/loyaut.css"
 import "./mobile.css"
+import {NavLink} from "react-router-dom";
 
 const Login = () => {
     return (
@@ -53,7 +54,7 @@ const Login = () => {
                     </div>
                     <div className="login__foter">
                         <p className="login__footer__text">У вас не аккаунта?</p>
-                        <a href="#" className="login__footer__link">регистрация</a>
+                        <NavLink style={{textDecoration:"none"}} to="/register"><a href="#" className="login__footer__link">регистрация</a></NavLink>
                     </div>
 
                 </div>

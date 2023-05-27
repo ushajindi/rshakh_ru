@@ -14,11 +14,17 @@ import Post from "./Components/Post/Post";
 import LibraryLayout from "./Components/LibraryLayout/LibraryLayout";
 import PostLayout from "./Components/PostLayout/PostLayout";
 import PostImages from "./Components/PostImages/PostImages";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-        <General/>
+        <Routes>
+            <Route path="/general" Component={General}/>
+            <Route path="/login" Component={Login}/>
+            <Route path="/register" Component={Register}/>
+        </Routes>
+
     </div>
   );
 }

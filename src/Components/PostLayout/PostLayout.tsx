@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./PostLoyout.css"
 import ChatLayout from "../ChatLayout/ChatLayout";
 import PostImages from "../PostImages/PostImages";
+import rootStore from "../../store/RootStore/instanse";
 
 const PostLayout = (props:any) => {
     const [layout,setLayout]=useState({
@@ -48,7 +49,7 @@ const PostLayout = (props:any) => {
                                 </svg>
                             </button>
                             <button
-                                onClick={()=>props.view()}
+                                onClick={()=>rootStore.GeneralPage.setPostModal()}
                                 className="postlayout__nav__title__btn__btn">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">

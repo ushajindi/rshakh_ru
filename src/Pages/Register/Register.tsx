@@ -4,6 +4,7 @@ import logo from "../../images/Logo (1).svg";
 import "../Login/Login.css"
 import "../../loyaut/loyaut.css"
 import "./mobile.css"
+import {NavLink} from "react-router-dom";
 
 const Register =()=>{
     return(
@@ -15,7 +16,7 @@ const Register =()=>{
                             <img src={logo} alt=""/>
                             <p className="logo__text">rshakh.ru </p>
                         </div>
-                        <a href="" className="login__link">Войти</a>
+                       <NavLink style={{textDecoration:"none"}} to="/login"><a href="" className="login__link">Войти</a></NavLink>
                     </div>
                     <div className="register__data">
                         <h2 className="register__data__title">Общайтесь со своей командой и воплощайте свои творческие идеи в жизнь</h2>

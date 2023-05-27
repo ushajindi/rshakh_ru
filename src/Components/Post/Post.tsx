@@ -6,13 +6,14 @@ import img3 from "../../images/Image-2.jpg"
 import UserIcon from "../User/UserIcon";
 import PostLayout from "../PostLayout/PostLayout";
 import ImageBox from "../ImageBox/ImageBox";
+import rootStore from "../../store/RootStore/instanse";
 
 const Post = (props:any) => {
     return (
         <div className='post'>
             <div className="post__inner">
                 <div className="post__items">
-                    <p onClick={()=>props.view()} className="post__title">Post Title</p>
+                    <p onClick={()=>rootStore.GeneralPage.setPostModal()} className="post__title">Post Title</p>
                 </div>
                 <div className="post__items">
                     <p className="post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
