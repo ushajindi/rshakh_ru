@@ -116,8 +116,14 @@
     display: grid;
     grid-template-columns: 70%;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 24px 48px;
+    gap: 34px 48px;
     justify-content: center;
+}
+.error__item{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:-50%
 }
 
 .login__input {
@@ -293,6 +299,9 @@
     line-height: 24px;
     /* identical to box height, or 150% */
     letter-spacing: 0.15px;
+}
+.login__btn:disabled{
+    background: #9B9C9E !important;
 }
 @media (max-width: 1176px) {
     .login__data {

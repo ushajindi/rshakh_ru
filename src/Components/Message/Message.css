@@ -6,6 +6,10 @@
 .message.me{
     background: rgba(83, 245, 13, 0.11);
 }
+.message__item__media__items__img{
+    width: 150px;
+    height: 150px;
+}
 
 .message__inner {
 
@@ -99,10 +103,11 @@
 .message__item__media {
     padding-left: 88px;
     padding-right: 12px;
+    padding-top: 15px;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .message__item__media__items {

@@ -2,6 +2,9 @@ import React from "react";
 import "./ChatLayout.css";
 import Message from "../Message/Message";
 import ChatInput from "../ChatInput/ChatInput";
+import rootStore from "../../store/RootStore/instanse";
+import {observer} from "mobx-react-lite";
+import {toJS} from "mobx";
 
 
 const ChatLayout=(props:any)=>{
@@ -28,22 +31,28 @@ const ChatLayout=(props:any)=>{
                 </div>
             </div>
             <div className="chatlayout__inner">
-                <div className="chatlayout__items">
-                    <Message width={props.width} me='me'/>
-                </div><div className="chatlayout__items">
-                    <Message width={props.width}/>
-                </div><div className="chatlayout__items">
-                    <Message width={props.width}/>
-                </div><div className="chatlayout__items chatlayout__items__end">
-                    <Message width={props.width}/>
-                </div>
+
+                {
+                    rootStore.GeneralPage.activeChat?rootStore.GeneralPage.activeChat.map(el=>{
+
+                            return(
+                                <div className="chatlayout__items">
+                                    <Message messages={el} width={props.width}/>
+                                </div>
+                            )
+                            }
+                        )
+                        : <div className="chat__text"> Выбирайте чат</div>
+                }
+
+
+
                 <div className='chatlayout__input'>
                     <ChatInput width={props.width}/>
                 </div>
-
             </div>
         </div>
     )
 }
 
-export default ChatLayout
+export default observer(ChatLayout)

@@ -1,0 +1,15 @@
+.members {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.members__items {
+    display: block;
+}
+
+.membersbox__username {
+}
+
+.membersbox__user__status {
+}

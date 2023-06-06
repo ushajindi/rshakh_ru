@@ -15,14 +15,15 @@ import LibraryLayout from "./Components/LibraryLayout/LibraryLayout";
 import PostLayout from "./Components/PostLayout/PostLayout";
 import PostImages from "./Components/PostImages/PostImages";
 import {Route, Routes} from "react-router-dom";
+import Loader from "./Components/Loader/Loader";
 
 function App() {
   return (
     <div className="App">
-        <Routes>
-            <Route path="/general" Component={General}/>
-            <Route path="/login" Component={Login}/>
-            <Route path="/register" Component={Register}/>
+       <Routes>
+            <Route path="/" element={<General/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/register" element={<Register/>}/>
         </Routes>
 
     </div>

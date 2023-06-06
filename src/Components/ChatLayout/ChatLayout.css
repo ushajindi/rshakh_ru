@@ -32,6 +32,14 @@
 
 
 }
+.chat__text{
+    color: #CDCECF;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
 .chatlayout__inner{
     height: 80vh;
     overflow: scroll;

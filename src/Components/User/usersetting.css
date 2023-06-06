@@ -1,0 +1,49 @@
+.usersetting {
+    width: 30vw;
+    background: rgba(19, 22, 25, 0.95);
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.usersetting__close{
+    padding: 20px;
+}
+.usersetting__inner{
+    padding:20px;
+    color: #CDCECF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.usersetting__items{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.usersetting__items input {
+    color: #CDCECF;
+    width: 80%;
+    border-radius: 12px;
+    font-size: 18px;
+    border: 1px solid rgba(182, 240, 156, 0.14);
+    padding: 20px;
+}
+.usersetting__image{
+}
+.usersetting__items__btn{
+    padding: 10px 30px;
+    width: 150px;
+    background: #1A1D21;
+    color: #CDCECF;
+}
+
+
+.usersetting__items__btn:disabled{
+    background: #9B9C9E;
+}
+.usersetting__items__btn.signout{
+    color: red;
+}

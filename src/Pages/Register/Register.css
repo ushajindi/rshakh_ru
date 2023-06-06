@@ -107,6 +107,9 @@
 }
 
 .register__data__input {
+    color: #CDCECF;
+    font-size: 20px;
+    padding: 0 10px;
     width: 100%;
     height: 48px;
     background: #1A1D21;
@@ -205,6 +208,9 @@
 
     background: #B6F09C;
     border-radius: 12px;
+}
+.register__data__items__btn button:disabled{
+    background: #9B9C9E;
 }
 .copyright {
     display: flex;
