@@ -111,6 +111,7 @@
 }
 
 .membersbox__btn__item {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     gap: 12px;

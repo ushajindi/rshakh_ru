@@ -1,15 +1,23 @@
-.members {
+.members__membersbox {
     display: flex;
-    justify-content: flex-start;
-    gap: 12px;
+    padding: 20px;
+    justify-content: space-between;
 }
 
-.members__items {
-    display: block;
+.members__membersbox__items {
+    display: flex;
+    gap: 20px;
 }
 
-.membersbox__username {
+
+.members__membersbox__btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-.membersbox__user__status {
+.members__btn__items {
+}
+
+.members__membersbox__btn__items {
 }

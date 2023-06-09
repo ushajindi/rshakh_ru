@@ -156,10 +156,12 @@ export default class UserStore {
                     const chats = await ApiService.getChats(token, userid)
                     const AnotherUserGet = await ApiService.findAllAnotherUsers(token)
                     rootStore.AnotherUsersStore.setAnotherUsers(AnotherUserGet.data)
-                    rootStore.ChatStore.setChats(chats.data)
+                    //rootStore.ChatStore.setChats(chats.data)
+                    rootStore.ChatStore.connectSocket(userid)
                     this.setLoading(false)
                 }
             } catch (e) {
+                this.setLoading(false)
                 console.log(e)
             }
 
