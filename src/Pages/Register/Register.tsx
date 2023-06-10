@@ -16,6 +16,7 @@ const Register =()=>{
     useEffect(()=>{
         if (userStore.Auth){
             navigate("/")
+            window.location.reload();
         }
     },[userStore.Auth])
     return(

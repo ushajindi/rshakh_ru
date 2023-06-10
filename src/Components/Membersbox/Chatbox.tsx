@@ -10,24 +10,27 @@ const Chatbox = () => {
             {
                 rootStore.ChatStore.Chats?.map((el=>{
                     return(
-                        <div onClick={(e)=>{
-                            rootStore.GeneralPage.setMainBox("chatbox")
-                            rootStore.GeneralPage.setActiveChat(el?.messages)
-                        } } className="membersbox__items" key={el?._id}>
+                        <>
                             {
                                 el?.users.map(users=>{
                                     if (users?._id!=rootStore.UserStore.User?._id){
-                                        return <>
+                                        return <div onClick={(e)=>{
+                                            rootStore.GeneralPage.setMainBox("chatbox")
+                                            rootStore.GeneralPage.setActiveChat(el?.messages)
+                                            rootStore.GeneralPage.setactiveNameChat(users?.username?users.username:"")
+                                            rootStore.MessageStore.setChatid(el._id)
+                                            rootStore.GeneralPage.setActiveChatId(el?._id)
+                                        } } className="membersbox__items" key={el?._id}>
                                             <UserIcon width={"50px"} src={users?.avaimg} online={'online'}/>
                                             <div className="membersbox__item__user">
                                                 <p className="membersbox__username">{users?.username}</p>
                                                 <p className="membersbox__user__status">{users?.email}</p>
                                             </div>
-                                        </>
+                                        </div>
                                     }
                                 })
                             }
-                        </div>
+                        </>
                     )
                 }))
             }

@@ -5,6 +5,7 @@ import ChatInput from "../ChatInput/ChatInput";
 import rootStore from "../../store/RootStore/instanse";
 import {observer} from "mobx-react-lite";
 import {toJS} from "mobx";
+import message from "../Message/Message";
 
 
 const ChatLayout=(props:any)=>{
@@ -14,7 +15,7 @@ const ChatLayout=(props:any)=>{
             <div style={{display:props.chatname}} className="chatlayout__box">
                 <div className="chatlayout__box__inner">
                     <div  className="chatlayout__box__items">
-                        <h2 className="chatlayout__box__text">Chat Name</h2>
+                        <h2 className="chatlayout__box__text">{rootStore.GeneralPage.activeNameChat?rootStore.GeneralPage.activeNameChat:"Начнем общение?"}</h2>
                         <span className="chatlayout__box__count">4</span>
                     </div>
                     <div className="chatlayout__box__items">
@@ -33,20 +34,18 @@ const ChatLayout=(props:any)=>{
             <div className="chatlayout__inner">
 
                 {
-                    rootStore.GeneralPage.activeChat?rootStore.GeneralPage.activeChat.map(el=>{
+                    rootStore.ChatStore.Chats?rootStore.ChatStore.Chats.map((el)=>{
+                        if (el?._id===rootStore.GeneralPage.ActiveChatId){
+                           return  el?.messages.map(message=>{
+                                return <Message messages={message} width={props.width}/>
+                            })
+                        }
 
-                            return(
-                                <div className="chatlayout__items">
-                                    <Message messages={el} width={props.width}/>
-                                </div>
-                            )
-                            }
-                        )
-                        : <div className="chat__text"> Выбирайте чат</div>
+                    }):<><div className="chat__text"> Выбирайте чат</div></>
                 }
+                <div className="chatlayout__message__end">
 
-
-
+                </div>
                 <div className='chatlayout__input'>
                     <ChatInput width={props.width}/>
                 </div>

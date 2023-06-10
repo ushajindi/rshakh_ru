@@ -1,14 +1,11 @@
 import React from "react";
 import "./Message.css"
 import UserIcon from "../User/UserIcon";
-import img1 from "../../images/Image.jpg"
-import img2 from "../../images/Image-1.jpg"
-import img3 from "../../images/Image-2.jpg"
 import {toJS} from "mobx";
 import ImageBox from "../ImageBox/ImageBox";
+import {observer} from "mobx-react-lite";
 
 const Message = (props:any) => {
-    console.log(toJS(props.messages))
     return (
         <div style={{width:props.width}} className={`message ${props.me}`}>
             <div className="message__inner">
@@ -47,4 +44,4 @@ const Message = (props:any) => {
         </div>
     )
 }
-export default Message
+export default observer(Message)
