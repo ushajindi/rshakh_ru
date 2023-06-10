@@ -32,6 +32,7 @@ const ChatLayout=(props:any)=>{
                 </div>
             </div>
             <div className="chatlayout__inner">
+                <div className="chatlayout__message__start"></div>
 
                 {
                     rootStore.ChatStore.Chats?rootStore.ChatStore.Chats.map((el)=>{

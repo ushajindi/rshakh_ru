@@ -29,7 +29,9 @@ const UserSetting = () => {
                <div className="usersetting__items">
                    <button disabled={!rootStore.UserStore.avaupload.name} type="submit" className="usersetting__items__btn">Изменить</button>
                    <button  onClick={()=>{
+                       rootStore.ChatStore.SocketDisconnect()
                        rootStore.UserStore.SignOut()
+
                    }} className="usersetting__items__btn signout">Выход</button>
                </div>
            </form>

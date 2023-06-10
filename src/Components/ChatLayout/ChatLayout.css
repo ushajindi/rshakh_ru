@@ -123,3 +123,6 @@
 .chatlayout__message__end{
     padding-bottom: 150px;
 }
+.chatlayout__message__start{
+    padding-top: 150px;
+}

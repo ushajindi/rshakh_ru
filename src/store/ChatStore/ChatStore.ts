@@ -1,15 +1,7 @@
 import {action, makeObservable, observable, toJS} from "mobx";
-import {SourceMap} from "module";
 import {usertype} from "../UserStore/UserStore";
 import io from 'socket.io-client';
 import rootStore from "../RootStore/instanse";
-import message from "../../Components/Message/Message";
-import * as http from "http";
-const token = localStorage.getItem("token")
-const userid = localStorage.getItem("userid")
-const socket= userid?io('http://localhost:3002', {
-    query: { _id: userid }
-}):io().disconnect()
 export type messageImgType={
         src:string
 }
@@ -44,6 +36,14 @@ private _Chats:ChatsType[]=[]
     })
     }
 
+   Socket(){
+       const userid = localStorage.getItem("userid")
+    if (userid){
+        return io(`localhost:3002/?_id=${userid}`)
+    }
+    return io().disconnect()
+
+    }
     get Chats():ChatsType[]{
     return this._Chats
     }
@@ -51,7 +51,7 @@ private _Chats:ChatsType[]=[]
         this._Chats=chats
     }
     async setChatIO(anotherUserid:string,username:string){
-    await socket.emit("chats",{
+    await this.Socket().emit("chats",{
         another_id:anotherUserid
     })
         const filteredData = this._Chats.filter((item) => {
@@ -94,7 +94,7 @@ private _Chats:ChatsType[]=[]
         },2000)
     }
     sendMessage(message:any,chatId:string){
-    socket.emit("message",{
+    this.Socket().emit("message",{
         message:message,
         chatid:chatId
     })
@@ -108,18 +108,18 @@ private _Chats:ChatsType[]=[]
         })
     }
     async connectSocket(userid:any){
-        const socket=io('http://localhost:3002', {
-            query: { _id: userid }
-        })
+       this.Socket().on("connect",()=>{
+       })
+        this.Socket().emit("getChats","")
     const events:any=[]
-      await socket.on(userid,(data:any)=>{
+      await this.Socket().on(userid,(data:any)=>{
             if (!(data.chats.length===0)){
                 this.setChats(data.chats)
                 data.chats.map((el:any)=>{
                     events.push(el._id.toString())
                 })
                 events.map(((event:any)=>{
-                    socket.on(event,(data:any)=>{
+                    this.Socket().on(event,(data:any)=>{
 
                         console.log(1)
                       if (data) {
@@ -129,11 +129,11 @@ private _Chats:ChatsType[]=[]
                 }))
             }
         })
-        const socketDisconnect=()=> {
-            // Отключение от сервера при размонтировании компонента
-            socket.disconnect()
-        }
 
+    }
+
+    SocketDisconnect=()=>{
+    this.Socket().disconnect()
     }
 
 
