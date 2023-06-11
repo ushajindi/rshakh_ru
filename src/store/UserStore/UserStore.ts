@@ -335,7 +335,7 @@ export default class UserStore {
             }
 
             case "password": {
-                if (this._UserStore.userRegisterValidated.password.password.length <= 8) {
+                if (this._UserStore.userRegisterValidated.password.password.length <= 7) {
                     this._UserStore.userRegisterValidated.password.error = "Поля не можеть быть меньше 8 символов"
                     break
                 } else {

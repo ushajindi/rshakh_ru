@@ -112,8 +112,8 @@ export default class GeneralPageStore {
         return this._activeBox.userSettingModal
     }
 
-    setUserSettingModal() {
-        this._activeBox.userSettingModal = !this._activeBox.userSettingModal
+    setUserSettingModal(value:boolean) {
+        this._activeBox.userSettingModal = value
     }
 
     setPostModal() {

@@ -14,7 +14,8 @@
     top: 0;
     height: 100vh;
     left: -100%;
-    transition: right ease-in-out 0.5s;
+    z-index: 99999;
+    transition: left ease-in-out 0.5s;
 }
 .usersetting__layout__modal.on{
     position: absolute;

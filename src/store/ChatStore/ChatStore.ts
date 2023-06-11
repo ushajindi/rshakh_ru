@@ -37,9 +37,9 @@ private _Chats:ChatsType[]=[]
     }
 
    Socket(){
-       const userid = localStorage.getItem("userid")
-    if (userid){
-        return io(`localhost:3002/?_id=${userid}`)
+       const token = localStorage.getItem("token")
+    if (token){
+        return io(`localhost:3002/?token=${token}`)
     }
     return io().disconnect()
 
@@ -120,8 +120,6 @@ private _Chats:ChatsType[]=[]
                 })
                 events.map(((event:any)=>{
                     this.Socket().on(event,(data:any)=>{
-
-                        console.log(1)
                       if (data) {
                             this.updateMessages(data.message, data.chatid)
                         }

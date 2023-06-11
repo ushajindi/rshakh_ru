@@ -126,3 +126,27 @@
 .chatlayout__message__start{
     padding-top: 150px;
 }
+.chat__text{
+    background: linear-gradient(45deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.7;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+@keyframes scrollAnimation {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+.scroll-animation {
+    animation: scrollAnimation 0.3s ease;
+}

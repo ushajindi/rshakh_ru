@@ -12,6 +12,8 @@
 .membersbox__inner {
     overflow: scroll;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
 }
 .membersbox__items.membersbox__items__end{
     padding-bottom: 100px;

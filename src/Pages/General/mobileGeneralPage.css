@@ -1,0 +1,116 @@
+@media (max-width: 995px) {
+    .usersetting{
+        width: 50vw;
+    }
+.members__membersbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+    .library{
+        width: 40vw;
+    }
+    .general {
+    }
+
+    .general__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .topbar{
+        width: 100%;
+        height: 150px;
+    }
+    .librarylayout{
+        width: 100%;
+    }
+    .chatlayout{
+        width: 100%;
+    }
+    .chatinput{
+     width: 100%;
+    }
+    .chatinput__inner{
+        width: 99vw;
+        display: flex;
+    }
+    .chatinput__items__input{
+        width: 90%;
+    }
+    .chatlayout__box__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .general__items__sidebar {
+        display: none;
+    }
+
+    .general__items__topbar {
+    }
+
+    .general__items__chatlayout {
+    }
+
+    .general__items__members {
+        position: absolute;
+        right: -100%;
+        height: 100vh;
+        transition: right 0.5s ease-in;
+        z-index: 99999;
+    }
+    .membersbox{
+        width: 280px;
+        height: 100%;
+    }
+    .general__items__members.on{
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 99999;
+        transition: right 0.5s ease-in-out;
+    }
+    .chatlayout__inner{
+        width: 100vw;
+    }
+    .message{
+        width: 100%;
+    }
+}
+@media (max-width: 568px) {
+    .usersetting{
+        width: 99vw;
+    }
+    .general__inner{
+        gap: 10px;
+    }
+    .librarylayout{
+        height: 100vh;
+    }
+    .librarylayout__inner{
+        height: 100%;
+    }
+    .library{
+        width: 100%;
+        height: 100%;
+    }
+    .topbar__inner{
+        display: none;
+    }
+    .chatlayout__box__inner{
+        height: 100%;
+    }
+    .chatlayout{
+        height: 93vh;
+    }
+    .topbar{
+        height: 50px;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 432px) {
+    .library{
+        max-width: 300px;
+    }
+}

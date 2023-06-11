@@ -22,7 +22,7 @@ const User =()=>{
                 </div>
             </div>
             <div className="user__setting"><img onClick={()=>{
-                rootStore.GeneralPage.setUserSettingModal()
+                rootStore.GeneralPage.setUserSettingModal(true)
             }} className="user__setting__img" src={setting} alt=""/></div>
         </div>
     )
